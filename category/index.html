@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/category/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/3dbe5573ce.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Access - Stream</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_logo">
+                <ul>
+                    <li><a href="#"><img src="/Homepage-assets/logo blanc.png" alt="logo"></a></li>
+                    <li><a href="/index.html">Acceuil</a></li>
+                    <li><a href="#" active>Catégories</a></li>
+                    <li><a href="#">Nos artistes</a></li>
+                    <li><a href="#">Cours en ligne</a></li>
+                </ul>
+            </div>
+            <div class="connexion">
+                <a href="#">Se connecter</a>
+                <a href="#">S'inscrire</a>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="checkbox--input" id = "check_1">
+                <div class="checkbox--sliding"></div>
+                <label class = "checkbox" for="check_1"></label>
+            </div>
+        </div>
+    </header>
+    <section class="categories_container">
+        <div class="filters">
+            <form class="filters_form">
+                <div class="filters_group">
+                    <select name="categories" id="categories">
+                        <option disabled hidden selected>Catégories</option>
+                        <option value="Sport">Sports</option>
+                        <option value="Musique">Musique</option>
+                        <option value="Art Visuel">Art Visuel</option>
+                        <option value="Photographie">Photographie</option>
+                        <option value="Théâtre">Théâtre</option>
+                    </select>
+                </div>
+            </form>
+            <form class="types_form">
+                <div class="types_group">
+                    <select name="types" id="types">
+                        <option disabled hidden selected>Types</option>
+                        <option value="Comédie">Comédie</option>
+                        <option value="Drame">Drame</option>
+                        <option value="Farce">Farce</option>
+                        <option value="Tragédie">Tragédie</option>
+                        <option value="Romance">Romance</option>
+                    </select>
+                </div>
+            </form>
+            <input id="search" type="text" placeholder="Recherche"></input>
+        </div>
+        <ul class="category_items_container" id="search_category">
+            <li class="item">
+                <div class="item-image">
+                    <p><span>Théâtre</span> - <span></span>Comédie</p>
+                </div>
+                <span>Cyrano de Bergerac</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg2">
+                    <p><span>Théâtre</span> - <span></span>Tragédie</p>
+                </div>
+                <span>Antigone</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg3">
+                    <p><span>Théâtre</span> - <span></span>Farce</p>
+                </div>
+                <span>Minotaure</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg4">
+                    <p><span>Sports</span> - <span></span>Football</p>
+                </div>
+                <span>Alex Kay</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg5">
+                    <p><span>Sports</span> - <span></span>Basket</p>
+                </div>
+                <span>Alex Klay</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg6">
+                    <p><span>Sports</span> - <span></span>Tennis</p>
+                </div>
+                <span>Emily Brawn</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg7">
+                    <p><span>Phtographie</span> - <span></span>Rue</p>
+                </div>
+                <span>Emily Brawn</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg8">
+                    <p><span>Photographie</span> - <span></span>Voyage</p>
+                </div>
+                <span>Frédéric Dubois</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg9">
+                    <p><span>Photographie</span> - <span></span>Artistique</p>
+                </div>
+                <span>Martin Richard</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg10">
+                    <p><span>Musique</span> - <span></span>Hip Hop</p>
+                </div>
+                <span>Chris Jo</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg11">
+                    <p><span>Musique</span> - <span></span>Pop</p>
+                </div>
+                <span>Clara Luciani</span>
+            </li>
+            <li class="item">
+                <div class="item-image  bg12">
+                    <p><span>Musique</span> - <span></span>Rap</p>
+                </div>
+                <span>Niska</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg13">
+                    <p><span>Art Visuel</span> - <span></span>Peinture</p>
+                </div>
+                <span>Flore Marie</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg14">
+                    <p><span>Art Visuel</span> - <span></span>Dessin</p>
+                </div>
+                <span>Maxime Roy</span>
+            </li>
+            <li class="item">
+                <div class="item-image bg15">
+                    <p><span>Art Visuel</span> - <span></span>Gravure</p>
+                </div>
+                <span>Luc Meyer</span>
+            </li>
+    </section>
+    <section class="pagination_container">
+        <div class="pagination">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17">
+                <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M14.265,14.691l6.618-6.427a1.186,1.186,0,0,0,0-1.716,1.281,1.281,0,0,0-1.77,0l-7.5,7.283a1.188,1.188,0,0,0-.036,1.675l7.53,7.333a1.283,1.283,0,0,0,1.77,0,1.186,1.186,0,0,0,0-1.716Z" transform="translate(-11.251 -6.194)"/>
+            </svg>
+            <div class="numbers">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">10</a>
+            </div>              
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17">
+                <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M18.236,14.691,11.618,8.264a1.186,1.186,0,0,1,0-1.716,1.281,1.281,0,0,1,1.77,0l7.5,7.283a1.188,1.188,0,0,1,.036,1.675l-7.53,7.333a1.283,1.283,0,0,1-1.77,0,1.186,1.186,0,0,1,0-1.716Z" transform="translate(-11.251 -6.194)"/>
+            </svg>              
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer-top">
+                <div class="contacts">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Ministère de la Culture</li>
+                        <li>182 Rue Saint-Honoré</li>
+                        <li>75001 Paris</li>
+                    </ul>
+                </div>
+                <div class="contacts center">
+                    <h2>Nos services</h2>
+                    <ul>
+                        <li>Applications</li>
+                        <li>FAQ</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+                <div class="contacts center">
+                    <h2>Nous suivre</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+                <div class="contacts center">
+                    <h2>Actualités</h2>
+                    <ul>
+                        <li>Partenaires</li>
+                        <li>Blog</li>
+                        <li>Presse</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="bot-link">
+                    <a href="#">© 2021 AcessStream. Tous les droits sont réservés</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Sécurité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

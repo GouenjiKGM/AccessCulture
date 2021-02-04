@@ -1,0 +1,457 @@
+body{
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: #1D232B;
+  
+}
+.head{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.croix{
+  width: 41px;
+  height: 41px;
+}
+.logo{
+  width: 168px;
+  height: 107px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+.profile > span{
+  width: 58px;
+  height: 25px;
+  text-align: left;
+  font: normal normal normal 21px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.profile_img {
+  width: 46px;
+  height: 46px;
+}
+.defile{
+  width: 18px;
+  height:10px;
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+.allStreamElement{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.stream{
+  position: relative;
+  width: 78%;
+  margin-left: 30px;
+}
+.stream_pic{
+  width: 100%;
+  height: 880px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+
+.live{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 45px;
+  width: 175px;
+  height: 41px;
+  background: #505050 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  opacity: 0.47;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.setting{
+  right: 0;
+  position: absolute;
+  margin-top: -70px;
+  margin-right: 45px;
+  width: 175px;
+  height: 41px;
+  background: #505050 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  opacity: 0.47;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.setting > img {
+  width: 20px;
+  height: 20px;
+}
+.live > div{
+  background: #AF2626 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  width: 91px;
+  height: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.live > div > div{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: white;
+  margin-left: -10px;
+  
+}
+.live > div > span{
+  text-align: left;
+  font: normal normal 600 13px/8px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: -10px;
+}
+.rec {
+  width: 49px;
+  height: 49px;
+  background-color: #AF2626;
+  border-radius: 50%;
+}
+.title{
+  display: flex;
+  width: 100%;
+  height: 89px;
+  align-items: center;
+  justify-content: space-between;
+}
+.title > div{
+  display: flex;
+  align-items: center;
+}
+.title > div > p {
+  font: normal normal 300 27px/17px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.barre{
+  width: 100%;
+  height: 2px;
+  background-color: #7C7C7C;
+  margin-top: 60px;
+}
+
+
+.allTchat{
+  width:18%;
+  height: 1030px;   
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+ 
+}
+.prototype{
+  height: 945px;
+  width: 100%;
+  background: #252836 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 3px 34px #00000052;
+}
+
+.artist{
+display: flex;
+align-items: center;
+margin-left: -15px;
+margin-top: 20px;
+}
+.artist > img{
+  width: 72px;
+  height: 72px;
+}
+
+.artist_info{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 20px;
+}
+.artist_info > span:nth-child(1){
+  width: 148px;
+  height: 38px;
+  font: normal normal normal 31px/21px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.artist_info > span:nth-child(2){
+  text-align: left;
+  width: 98px;
+  font: normal normal normal 21px/14px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 0.63;
+}
+
+/* -------------------------------------------------- */
+.tchatHeader{
+width: 100%;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font: normal normal normal 27px/17px Montserrat;
+color: #FFFFFF;
+border-bottom: white 1px solid;
+z-index: 40;
+}
+
+.tchatHeader > img{
+  width: 26px;
+height: 26px;
+}
+
+
+
+.send_tchatBar{
+  width: 100%;
+  display: flex;
+  height: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+#tchat{
+  position: relative;
+  width: 100%;
+  height: 69px;
+  background-color: #3D4258;
+  padding-left: 60px;
+  color: white;
+  border: none;
+  border-radius: 21px;
+  margin-bottom: 30px;
+  font: normal normal normal 14px/12px Montserrat;
+  box-shadow: 0px 15px 34px #00000052;
+
+}
+input:focus {
+  outline:none;
+  }
+#tchat_send{
+  position: absolute;
+  display: flex;
+  margin-top: -14px;
+  margin-left: -30px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.tchat_point{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.point{
+  font: normal normal normal 12px/8px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.point_value{
+  font: normal normal normal 21px/14px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+
+
+/* -------------------------------------------------- */
+
+.merchandise{
+  width: 100%;  
+  height: 300px;
+  /* background-color: brown; */
+}
+.allProduct{
+  display: flex;
+  margin-top: 40px;
+  margin-left:30px;
+}
+.buyMerch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 550px;
+}
+
+.buyMerch > p{
+  text-align: left;
+  font: normal normal normal 27px/17px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.products{
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: scroll;
+  /* background-color: brown; */
+}
+.product > img{
+  width: 165px;
+  height: 151px;
+  /* background-color: brown; */
+}
+
+.product{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.product > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  height: 100%;
+  width: 100%;
+}
+.product_police_white{
+  text-align: left;
+  font: normal normal normal 16px/17px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.product_police_grey{
+  text-align: left;
+  font: normal normal normal 16px/17px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 0.51;
+}
+
+/* Checkbox */
+
+.checkbox {
+  margin-left: 15px;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox--sliding {
+  --checkbox-background: #67BCED;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--checkbox-background);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+/* Appearance of checkbox before clicking */
+.checkbox--sliding:after {
+  --checkbox-background: #f3f4f5;
+  position: absolute;
+  content: "\f185";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  color: black;
+  height: 26px;
+  width: 26px;
+  background: var(--checkbox-background);
+  border-radius: 50%;
+  left: 3px;
+  top: 18px;
+  transform: translateY(-60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5px 0px 2px #c8cbcc;
+  transition: 0.4s;
+}
+
+.checkbox--input:checked + .checkbox--sliding {
+  --checkbox-background: #41444B;
+}
+/* Appearance of checkbox */
+.checkbox--input:checked + .checkbox--sliding:after {
+  background: var(--checkbox-background);
+  left: calc(100% - 29px);
+  content: "\f186";
+  color: #41444B;
+  box-shadow: -0.5px 0px 2px rgb(110, 110, 110);
+}
+
+/* Dark Mode */
+.dark_header {
+  background: #252C36;
+}
+
+.white_bg {
+  background: white;
+}
+
+.dark_newsletter-container {
+  background: #252C36;
+}
+
+.dark_newsletter-color {
+  color: white;
+}
+.dark_color {
+  color: white;
+}
+.dark_button {
+  background: #1D232B;
+}
+
+.dark_footer {
+  background: #252836;
+}
+
+.dark_search_bg {
+  background: #41444B;
+}
+
+.dark_research_bg {
+  background: #252C36;
+}
+

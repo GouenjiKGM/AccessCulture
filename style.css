@@ -1,0 +1,630 @@
+:root {
+    --circle-bg: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #00000034 1px 0px 25px;
+}
+
+body {
+    position: relative;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    min-width: 80%;
+}
+
+.header_logo {
+    width: 55%;
+}
+
+.header_logo ul {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+
+.header_logo ul li {
+    list-style: none;
+}
+
+.header_logo ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+.header_logo ul li a:focus {
+    border-bottom: 2px solid black;
+}
+
+.header_logo ul li a img {
+    width: 143px;
+    height: 91px;
+}
+
+.header_logo .connexion {
+    display: flex;
+    width: 20%;
+}
+
+.connexion a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.connexion a:last-child {
+    padding: 15px 30px;
+    background: #0441A0;
+    border: 1px solid #707070;
+    color: white;
+}
+
+/* Categories */
+
+.categories_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories {
+    display: flex;
+    min-width: 80%;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.icon {
+    margin-bottom: 5px;
+}
+
+.category .icon svg {
+    width: 90.5px;
+    height: 90.5px;
+    padding: 20px;
+    border-radius: 50%;
+    background: var(--circle-bg);
+    color: white;
+}
+
+.category a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+
+.yellow {
+    --circle-bg: #FFE84D;
+}
+
+.red {
+    --circle-bg: #FF4D4D;
+}
+
+.orange {
+    --circle-bg: #FFB84D;
+}
+
+.black {
+    --circle-bg: #000000;
+}
+
+.purple {
+    --circle-bg: #AB4DFF;
+}
+
+.category span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.infos {
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.infos svg {
+    margin-right: 10px;
+}
+
+.infos span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #909090;
+}
+
+/* Events */
+.events_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.events_container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.slider {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.slide {
+    transition: 2s;
+}
+
+.slide img {
+    width: 1300px;
+    height: 500px;
+    transition: ease 2s;
+}
+
+.left-arrow {
+    position: absolute;
+}
+
+
+.left-arrow {
+    top: 45%;
+    left: 5%;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: absolute;
+}
+
+.right-arrow {
+    top: 45%;
+    right: -140%;
+    cursor: pointer;
+}
+
+/* Moments artists */
+
+.moments_container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.moments_container p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.artists_container {
+    padding-top: 60px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.artist {
+    width: 233px;
+    height: 233px;
+    margin-right: 50px;
+    background: url("Homepage-assets/artiste du moment.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.art2 {
+    background: url("Homepage-assets/artiste du moment 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art3 {
+    background: url("Homepage-assets/artiste du moment 3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art4 {
+    background: url("Homepage-assets/artiste du moment 4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art5 {
+    background: url("Homepage-assets/artiste du moment 5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art6 {
+    background: url("Homepage-assets/artiste du moment 6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art7 {
+    background: url("Homepage-assets/artiste du moment 7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.artists_container::-webkit-scrollbar {
+    width: 0;
+}
+
+.artist_image {
+    width: 233px;
+    height: 233px;
+}
+
+.artist_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.artist p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    width: 233px;
+    position: absolute;
+}
+
+.overlay {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+/* Newsletter */
+
+.newsletter_container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 3px 23px rgba(0, 0, 0, 0.103);
+}
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.newsletter-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.newsletter-image h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #41444B;
+}
+
+.newsletter h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #41444B;
+    padding-bottom: 15px;
+}
+
+.inscription {
+    display: flex;
+    width: 40%;
+}
+
+.inscription input {
+    border: 1px solid #707070;
+    border-right: none;
+    padding: 10px;
+    border-radius: 12px 0 0 12px;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inscription button {
+    background: #7CCCE9;
+    border: none;
+    padding: 13px 25px;
+    margin-left: -2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 0px 12px 12px 0px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 75px;
+}
+
+.footer_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0441A0;
+}
+
+.footer-top {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    line-height: 3em;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contacts ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer-bot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    background: #0441A0;
+    box-shadow: 0 3px 34px rgba(0, 0, 0, 0.068);
+}
+
+.bot-link {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-link a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Checkbox */
+
+.checkbox {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox--sliding {
+    --checkbox-background: #67BCED;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--checkbox-background);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+/* Appearance of checkbox before clicking */
+.checkbox--sliding:after {
+    --checkbox-background: #f3f4f5;
+    position: absolute;
+    content: "\f185";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: black;
+    height: 26px;
+    width: 26px;
+    background: var(--checkbox-background);
+    border-radius: 50%;
+    left: 3px;
+    top: 18px;
+    transform: translateY(-60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0px 2px #c8cbcc;
+    transition: 0.4s;
+}
+
+.checkbox--input:checked + .checkbox--sliding {
+    --checkbox-background: #41444B;
+}
+/* Appearance of checkbox */
+.checkbox--input:checked + .checkbox--sliding:after {
+    background: var(--checkbox-background);
+    left: calc(100% - 29px);
+    content: "\f186";
+    color: #41444B;
+    box-shadow: -0.5px 0px 2px rgb(110, 110, 110);
+}
+
+/* Dark Mode */
+.dark_header {
+    background: #252C36;
+}
+
+.dark_bg {
+    background: #1D232B;
+}
+
+.dark_newsletter-container {
+    background: #252C36;
+}
+
+.dark_newsletter-color {
+    color: white;
+}
+.dark_color {
+    color: white;
+}
+.dark_button {
+    background: #1D232B;
+}
+
+.dark_footer {
+    background: #252836;
+}
+
+/* Accessibility menu */
+.accessibility_button {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.accessibility_menu {
+    position: fixed;
+    visibility: hidden;
+    left: 1.5%;
+    top: 51.5%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 60px;
+    align-items: center;
+    background: #0441A0;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.big_cursor {
+    cursor: url("/Homepage-assets/concert\ 2.png"), auto;
+}
+
+.bigger_font {
+    font-size: x-large;
+}
