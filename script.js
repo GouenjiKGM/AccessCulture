@@ -84,7 +84,7 @@ setInterval(function(){
                 ele.style.color ="initial"
             });
             newsletter.classList.remove("dark_newsletter-container")
-            button.style.background = "initial"
+            button.style.background = "#7CCCE9"
             newsletter.querySelector(".newsletter .newsletter-image h2").style.color = "initial"
             newsletter.querySelector(".newsletter h3").style.color = "initial"
             footer.classList.remove("dark_bg")
