@@ -193,7 +193,7 @@ body {
 }
 
 .slider {
-    width: 80%;
+    width: 1300px;
     height: 500px;
     overflow: hidden;
 }
@@ -232,7 +232,7 @@ body {
 
 .right-arrow {
     top: 45%;
-    right: -140%;
+    right: -155%;
     cursor: pointer;
 }
 
