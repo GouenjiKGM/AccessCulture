@@ -43,6 +43,7 @@ setInterval(function(){
     let footer = document.querySelector("footer")
     let header_police = document.querySelectorAll(".header_logo ul li a")
     let category_police = document.querySelectorAll(".category a")
+    let logo = document.querySelector(".logo")
 
     // checkbox
     let checkbox = document.querySelector(".checkbox--input")
@@ -70,6 +71,7 @@ setInterval(function(){
             document.querySelectorAll(".connexion a").forEach(e => {
                 e.style.color = "white"
             })
+            logo.src = "/Homepage-assets/Blanc(dark).png"
         }    
         else {
             header.classList.remove("dark_header")
@@ -93,6 +95,7 @@ setInterval(function(){
             document.querySelectorAll(".connexion a").forEach(e => {
                 e.style.color = "initial"
             })
+            logo.src = "/Homepage-assets/logo blanc.png"
         }
     })
 // Accessibility
@@ -104,6 +107,7 @@ setInterval(function(){
     let p = 0
     let t = 0
     let body = document.querySelectorAll("section")
+    let contrast = document.querySelector(".contrast")
 
     // Ouverture/ Fermeture
 
@@ -143,7 +147,16 @@ setInterval(function(){
             document.querySelectorAll(".category span").forEach(x => {
                 x.style.fontSize = "30px"
             })
-            document.querySelector(".events_container h2").style.fontSize = "30px"
+            document.querySelector(".events_container h2").style.fontSize = "40px"
+            document.querySelector(".moments_container p").style.fontSize = "40px"
+            document.querySelector(".newsletter-image h2").style.fontSize = "60px"
+            document.querySelector(".newsletter h3").style.fontSize = "34px"
+            document.querySelectorAll(".contacts ul li").forEach(e => {
+                e.style.fontSize = "24px"
+            })
+            document.querySelectorAll(".contacts h2").forEach(z => {
+                z.style.fontSize = "27px"
+            })
         }
         else {
             body.forEach(e => {
@@ -153,7 +166,27 @@ setInterval(function(){
             document.querySelectorAll(".category span").forEach(x => {
                 x.style.fontSize = "initial"
             })
-            document.querySelector(".events_container h2").style.fontSize = "initial"
+            document.querySelector(".events_container h2").style.fontSize = "30px"
+            document.querySelector(".moments_container p").style.fontSize = "30px"
+            document.querySelector(".newsletter-image h2").style.fontSize = "50px"
+            document.querySelector(".newsletter h3").style.fontSize = "24px"
+            document.querySelectorAll(".contacts ul li").forEach(e => {
+                e.style.fontSize = "14px"
+            })
+            document.querySelectorAll(".contacts h2").forEach(z => {
+                z.style.fontSize = "17px"
+            })
+        }
+    })
+    let body_contrast = document.querySelector("body")
+    contrast.addEventListener("click", function() {
+        if (t == 0) {
+            body_contrast.style.filter = "contrast(1.5)"
+            t = 1
+        }
+        else {
+            body_contrast.style.filter = "initial"
+            t = 0
         }
     })
 

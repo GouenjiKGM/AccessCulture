@@ -1,0 +1,129 @@
+.body{
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+.logo > img{
+  z-index: 10;
+  position: relative;
+  width: 30%;
+  height: 50%;
+  margin-left: 10%;
+}
+.background > img {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+} 
+.all_page{
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+  
+
+.inscription{
+  z-index: 20;
+  margin-right: 20%;
+  
+}
+
+.formulaire{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire > div{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* ------------------------------------------------------- */
+
+.formulaire > h1{
+  width: 487px;
+  height: 107px;
+  text-align: left;
+  font: normal normal 550 88px/107px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF; 
+  opacity: 1;
+  margin-bottom: 10% ;
+}
+
+.formulaire > label{
+  display: block;
+  padding: 1 0 .5rem;
+  font: normal normal normal 21px/25px Montserrat;
+  color: white;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-top: 10%;
+}
+
+.formulaire > input{
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #3D91C1;
+  color: white;
+  border: none;
+  border-bottom: white solid 1px;
+  margin-bottom: 30px;
+  font: normal normal normal 21px/25px Montserrat;
+}
+
+input:focus {
+  outline:none;
+  }
+#sent_Btn{
+  border: 0;
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 20%;
+  color: #3D91C1;
+  /* box-sizing: border-box;
+  border-radius: 50%; */
+  border: 0px solid white;
+  border-top-right-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  border-top-left-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  outline:none;
+}
+
+.oublie{
+  width: 140px;
+  text-align: center;
+  height: 50px;
+  text-align: center;
+  font: normal normal 100 21px/25px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration:none; 
+}
+
+.inscription_btn{
+  width: 140px;
+  text-align: center;
+  height: 50px;
+  font: normal normal 100 21px/25px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration:none; 
+}

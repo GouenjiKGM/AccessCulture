@@ -23,7 +23,7 @@ header {
 }
 
 .header_logo {
-  width: 50%;
+  width: 55%;
 }
 
 .header_logo ul {
@@ -45,6 +45,7 @@ header {
   font-weight: 600;
   font-size: 15px;
   color: black;
+  text-transform: uppercase;
 }
 
 .header_logo ul li a img {
@@ -308,4 +309,31 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
+}
+
+/* Dark Mode */
+.dark_header {
+  background: #252C36;
+}
+
+.dark_bg {
+  background: #1D232B;
+}
+
+.dark_newsletter-container {
+  background: #252C36;
+}
+
+.dark_newsletter-color {
+  color: white;
+}
+.dark_color {
+  color: white;
+}
+.dark_button {
+  background: #1D232B;
+}
+
+.dark_footer {
+  background: #252836;
 }

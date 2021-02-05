@@ -18,10 +18,6 @@ header {
     box-shadow: #00000034 1px 0px 25px;
 }
 
-body {
-    position: relative;
-}
-
 .header_container {
     display: flex;
     justify-content: space-between;
@@ -447,6 +443,7 @@ footer {
     justify-content: center;
     align-items: center;
     background: #0441A0;
+    position: relative;
 }
 
 .footer-top {
@@ -594,18 +591,18 @@ footer {
 
 /* Accessibility menu */
 .accessibility_button {
-    position: fixed;
+    position: absolute;
     left: 1%;
-    top: 50%;
+    top: 0%;
     z-index: 1;
     cursor: pointer;
 }
 
 .accessibility_menu {
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     left: 1.5%;
-    top: 51.5%;
+    top: 0%;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -615,6 +612,7 @@ footer {
     background: #0441A0;
     border-radius: 5px;
     justify-content: space-around;
+    scale: 0.8;
 }
 
 .click {
@@ -622,7 +620,8 @@ footer {
 }
 
 .big_cursor {
-    cursor: url("/Homepage-assets/concert\ 2.png"), auto;
+    /* cursor: url("Homepage-assets/le-curseur.svg"), auto; */
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
 }
 
 .bigger_font {

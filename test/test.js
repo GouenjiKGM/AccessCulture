@@ -2,38 +2,38 @@ window.addEventListener("DOMContentLoaded", function() {
 
     button1 = document.querySelector("#blue")
     button2 = document.querySelector("#red")
-    let sceneEl = document.querySelector('a-scene');
+    // let sceneEl = document.querySelector('a-scene');
     body = document.querySelector("body")
     b = 0;
     a = 0;
 
-    AFRAME.registerComponent('marker', {
-        schema: {
-          default: ''
-        },
-        init() {
-          const sky = document.querySelector('a-image');
-          var b = false
-          sceneEl.querySelector("#damso").addEventListener('click', () => {
-            // if (b) {
-            //   sky.setAttribute('src', "#entrance");
-            // } else {
-            //   sky.setAttribute('src', "#study");
-            // }
-            // b = !b;
-            console.log('clicked');
-          });
-        }
-      });
+    // AFRAME.registerComponent('marker', {
+    //     schema: {
+    //       default: ''
+    //     },
+    //     init() {
+    //       const sky = document.querySelector('a-image');
+    //       var b = false
+    //       sceneEl.querySelector("#damso").addEventListener('click', () => {
+    //         // if (b) {
+    //         //   sky.setAttribute('src', "#entrance");
+    //         // } else {
+    //         //   sky.setAttribute('src', "#study");
+    //         // }
+    //         // b = !b;
+    //         console.log('clicked');
+    //       });
+    //     }
+    //   });
 
     // Damso.addEventListener("click", function() {
         
     // })
-    console.log(sceneEl.querySelector('#damso'));
+    // console.log(sceneEl.querySelector('#damso'));
 
-    sceneEl.querySelector('#damso').addEventListener("click", function() {
-        console.log("Hello world")
-    })
+    // sceneEl.querySelector('#damso').addEventListener("click", function() {
+    //     console.log("Hello world")
+    // })
 
     // button1.addEventListener("click", function(){
     //     if (a == 1) {
@@ -67,14 +67,4 @@ window.addEventListener("DOMContentLoaded", function() {
     //         b = 1;
     //     }
     // })
-
-
-
-
-
-
-
-
-
-
 })

@@ -55,4 +55,10 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+    let croix = document.querySelector(".croix")
+
+    croix.addEventListener("click", function() {
+        document.location.href="/index.html"
+    })
+
 })

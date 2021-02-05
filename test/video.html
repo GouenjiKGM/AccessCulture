@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <title>Video</title>
+</head>
+<body>
+    <a-scene>
+        <a-entity>
+            <a-assets>
+                <video id="vid" loop="true" src="ASAP.mp4"></video>
+            </a-assets>
+            <a-video src="#vid" width="16" height="9" position="0 0 -20"></a-video>
+        </a-entity>
+    </a-scene>
+</body>
+</html>

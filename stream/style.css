@@ -329,6 +329,10 @@ input:focus {
   /* background-color: brown; */
 }
 
+.croix {
+  cursor: pointer;
+}
+
 .product{
   display: flex;
   align-items: center;
